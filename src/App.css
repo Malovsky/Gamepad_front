@@ -1,0 +1,104 @@
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+
+.color-reverse {
+  background-color: #eb565b;
+  color: white;
+}
+
+.color-reverse-hover:hover {
+  cursor: pointer;
+  background-color: #b1272c;
+  transition-duration: 300ms;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #1f2023;
+  border-bottom: 2px solid #eb565b;
+  height: 5rem;
+}
+
+.header-logo-container,
+.header-connect-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 1rem;
+}
+.header-logo-container {
+  margin-left: 1rem;
+}
+
+.header-logo-container p {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header-logo {
+  height: 60%;
+  cursor: pointer;
+}
+
+.header-connect-container {
+  margin-right: 1rem;
+}
+
+.header-connect-container p {
+  cursor: pointer;
+}
+
+.header-connect-container button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+
+/* ---------- HOME ---------- */
+
+.home-container {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background-color: #1f2023;
+}
+
+.home-title-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 6rem;
+}
+
+.home-title-logo {
+  display: flex;
+  height: 100%;
+}
+
+.home-title-search-container p {
+  font-size: 5rem;
+  text-shadow: 4px 4px 4px #737577;
+}
+
+.home-logo {
+  height: 70%;
+}
