@@ -1,5 +1,6 @@
 import axios from "axios";
 import Game from "../components/Game";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -16,8 +17,6 @@ const Home = () => {
         const response = await axios.get(
           `https://api.rawg.io/api/games?key=1a2e4578488f4df3abb638368bf0812c&${page}&search=${searchBar}`
         );
-        console.log(response.data.results);
-        console.log(response.data.count);
         setTotalGame(response.data.count);
         setGames(response.data.results);
         setIsLoading(false);
@@ -69,7 +68,11 @@ const Home = () => {
       <h1 className="home-title-games-list">Most Relevance Games</h1>
       <div className="games-list-container">
         {games.map((game) => {
-          return <Game key={game.id} game={game} />;
+          return (
+            <Link to={`/game/${game.id}`} key={game.id} state={game}>
+              <Game key={game.id} game={game} />
+            </Link>
+          );
         })}
       </div>
     </div>

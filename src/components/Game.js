@@ -1,5 +1,4 @@
 const Game = ({ game }) => {
-  console.log(game);
   return (
     <div className="game-card-container">
       <img
@@ -7,6 +6,9 @@ const Game = ({ game }) => {
         src={game.background_image}
         alt={game.name}
       />
+      <div className="game-card-title-container">
+        <p>{game.name}</p>
+      </div>
     </div>
   );
 };
