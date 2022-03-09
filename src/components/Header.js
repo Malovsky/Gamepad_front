@@ -5,12 +5,11 @@ const Header = () => {
   return (
     <header>
       <div className="header-container">
-        <div className="header-logo-container">
+        <div className="header-logo-container" onClick={() => navigate("/")}>
           <img
             src="./gamepad-logo.png"
             alt="Logo gamepad"
             className="header-logo"
-            onClick={() => navigate("/")}
           />
           <p>Gamepad</p>
         </div>
