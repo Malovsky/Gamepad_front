@@ -20,7 +20,10 @@ const GameDetails = () => {
         </div>
         {/* GAME PICTURE */}
         <div className="game-details-texts-container">
-          <p>texts</p>
+          <p>
+            Plateform / Genre / Realeased date / Developer / Publisher / Age
+            rating / About
+          </p>
         </div>
       </div>
     </div>
